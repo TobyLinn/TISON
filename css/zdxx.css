@@ -1,0 +1,290 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+@keyframes boom {
+  100% {
+    transform: scale(1.1);
+    z-index: 2;
+  }
+}
+.boom:hover {
+  animation: boom 1s ease forwards;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  opacity: 0.9;
+  width: 100%;
+  background-color: #fff;
+  margin: auto;
+  min-width: 1200px;
+  z-index: 100;
+}
+header .header1 {
+  width: 1200px;
+  margin: auto;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+header .header1 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header1 div img {
+  width: 120px;
+  height: 44px;
+}
+header .header1 div ul {
+  overflow: hidden;
+}
+header .header1 div ul li {
+  padding: 10px 10px;
+  height: 30px;
+  font-size: 18px;
+  color: #000000;
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+  margin-left: 20px;
+}
+header .header1 div ul li:hover {
+  color: orange;
+}
+header .header1 div ul li a div {
+  width: 30px;
+  height: 15px;
+  margin-top: 15px;
+  margin-right: 10px;
+  background-image: url("../images/more.png");
+}
+header .header1 div ul .liang {
+  color: orange;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    min-width: 10vw !important;
+    height: 100%;
+    max-height: 100vw !important;
+  }
+  .header1 {
+    width: 375px !important;
+    min-width: 10vw !important;
+    height: 100%;
+    max-height: 100vw !important;
+  }
+  .nav > ul {
+    flex-direction: column;
+    height: 0;
+  }
+}
+footer {
+  background-color: black;
+  max-width: 1920px;
+  min-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+footer .footer-box {
+  width: 1200px;
+  height: 390px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+footer .footer-box .jrwm {
+  width: 400px;
+  height: 370px;
+  color: white;
+  position: relative;
+}
+footer .footer-box .jrwm .jrwm-top {
+  display: flex;
+  display: nowrap;
+  align-items: center;
+  position: relative;
+  margin: 80px 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+footer .footer-box .jrwm .jrwm-top div::after {
+  content: "";
+  width: 30px;
+  position: absolute;
+  top: 75px;
+  left: 10px;
+  border: 1px solid #fff;
+  opacity: 0.2;
+}
+footer .footer-box .jrwm .jrwm-top div {
+  width: 60px;
+  height: 15px;
+  margin: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+footer .footer-box .jrwm .jrwm-top div:nth-of-type(2)::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  top: 5px;
+  left: 80px;
+  border: 1px solid #fff;
+  opacity: 0.2;
+}
+footer .footer-box .jrwm .jrwm-top div:nth-of-type(2)::after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 0px;
+  top: 5px;
+  left: 160px;
+  border: 1px solid #fff;
+  opacity: 0.2;
+}
+footer .footer-box .jrwm .jrwm-bottom {
+  margin-top: 90px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+footer .footer-box .lxfs {
+  width: 400px;
+  height: 290px;
+  margin-top: 100px;
+}
+footer .footer-box .lxfs p {
+  width: 315px;
+  color: white;
+}
+footer .footer-box .lxfs p:nth-of-type(2) {
+  margin-top: 30px;
+}
+footer .footer-box .lxfs p:nth-of-type(2),
+footer .footer-box .lxfs p:nth-of-type(3),
+footer .footer-box .lxfs p:nth-of-type(4),
+footer .footer-box .lxfs p:nth-of-type(5) {
+  font-size: 12px;
+  color: #fefefe;
+  line-height: 24px;
+  opacity: 0.9;
+  white-space: pre-wrap;
+}
+footer .footer-box .lxfs p:last-of-type {
+  text-align: center;
+  margin-top: 80px;
+  height: 10px;
+  font-size: 10px;
+  line-height: 18px;
+  color: #fefefe;
+}
+footer .footer-box .lxfs::before {
+  content: "";
+  height: 100px;
+  position: absolute;
+  top: 110px;
+  left: 340px;
+  border: 1px solid #fff;
+  opacity: 0.2;
+}
+footer .footer-box .lxfs::after {
+  content: "";
+  height: 100px;
+  position: absolute;
+  top: 110px;
+  left: 800px;
+  border: 1px solid #fff;
+  opacity: 0.2;
+}
+footer .footer-box .ewm {
+  width: 400px;
+  text-align: right;
+  height: 370px;
+  margin-right: 20px;
+}
+footer .footer-box .ewm img {
+  width: 81px;
+  height: 81px;
+  margin-top: 100px;
+}
+footer .footer-box .ewm p {
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fefefe;
+}
+
+nav .pic {
+  position: relative;
+  max-width: 1920px;
+  max-height: 800px;
+  width: 100%;
+  height: 800px;
+  background: url("../images/BANNER4.png") no-repeat center/cover;
+}
+
+.zdxx {
+  width: 1200px;
+  height: 610px;
+  margin: auto;
+}
+.zdxx .zdxx-title {
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 90px;
+  position: relative;
+}
+.zdxx .zdxx-title::after {
+  content: "";
+  border: 1px solid #000;
+  opacity: 0.1;
+  width: 80px;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.zdxx div {
+  margin-top: 80px;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.zdxx div .zdxx-right {
+  width: 280px;
+  margin-left: 30px;
+  display: block;
+  position: relative;
+}
+.zdxx div .zdxx-right p {
+  width: 276px;
+  position: absolute;
+}
+.zdxx div .zdxx-right p:first-of-type {
+  font-size: 46px;
+  line-height: 23px;
+  letter-spacing: 35px;
+  color: #333333;
+  opacity: 0.05;
+}
+.zdxx div .zdxx-right p:nth-of-type(2) {
+  margin-top: 50px;
+  font-size: 14px;
+  line-height: 23px;
+  color: #999999;
+  text-indent: 2em;
+}
+
+/*# sourceMappingURL=zdxx.css.map */

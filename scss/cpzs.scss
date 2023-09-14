@@ -1,0 +1,244 @@
+@import 'com', 'header', 'footer';
+
+
+
+nav {
+  .pic {
+      position: relative;
+      max-width: 1920px;
+      max-height: 800px;
+      width: 100%;
+      height: 800px;
+      background: url('../images/BANNER2.png') no-repeat center/cover;
+    }
+}
+
+.zjxl {
+  width: 1200px;
+  height: 1088px;
+  margin: auto;
+  position: relative;
+
+  p {
+    padding-top: 90px;
+    text-align: center;
+    font-size: 44px;
+    margin-bottom: 50px;
+  }
+
+
+
+  .zjxl-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      height: 380px;
+      border: 1px solid #fef6f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 5px;
+      position: relative;
+
+      img {
+        margin: auto;
+      }
+
+      .cover {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border: 0;
+        position: absolute;
+        background-image: url('../images/产品展示_03.png');
+        opacity: 0;
+
+        p {
+          width: 135px;
+          padding: 0;
+          margin: 0;
+          color: #fff;
+          font-size: 16px;
+          text-align: center;
+          position: absolute;
+        }
+
+
+        .xhx {
+          text-decoration: underline;
+        }
+
+        .p1 {
+          position: relative;
+          top: 10px;
+          left: 68px;
+          font-size: 15px;
+        }
+
+        .p2 {
+          position: relative;
+          font-size: 17px;
+          left: -70px;
+          top: 50px;
+        }
+
+        .p3 {
+          position: relative;
+          font-size: 10px;
+          opacity: 0.7;
+          bottom: -50px;
+          left: 65px;
+        }
+
+        .p4 {
+          position: relative;
+          font-size: 10px;
+          opacity: 0.7;
+          bottom: -70px;
+          left: -70px;
+        }
+      }
+
+      .cover:hover {
+        transition: all 0.5s;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.yhda {
+  width: 100%;
+  max-width: 1920px;
+  min-width: 1200px;
+  margin: auto;
+  height: 500px;
+  background-image: url('../images/整景.png');
+
+  .yhda-cover {
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+
+
+    .yhda-content {
+      position: absolute;
+      width: 950px;
+      height: 350px;
+      border: 1px solid #ffffff15;
+      margin: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+
+
+      p:first-of-type {
+        width: 100%;
+        text-align: center;
+        font-size: 70px;
+        color: white;
+      }
+
+      p:nth-of-type(2) {
+        width: 100%;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+    }
+  }
+}
+
+.xlxl {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding-bottom: 50px;
+  position: relative;
+  background-color: #fef6f1;
+
+  .xlxl-box {
+    width: 1200px;
+    margin: auto;
+
+    p {
+      padding-top: 90px;
+      text-align: center;
+      font-size: 44px;
+      margin-bottom: 50px;
+    }
+
+
+
+    .xlxl-box2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .xlxl-box1 {
+        margin-top: 30px;
+        width: 380px;
+        height: 530px;
+        // border: 1px solid #f9a575;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+
+        img {
+          width: 380px;
+          height: 380px;
+        }
+
+        p:first-of-type {
+          position: absolute;
+          padding: 0;
+          margin: 0;
+          height: 18px;
+          width: 100%;
+          font-size: 18px;
+          line-height: 26px;
+          color: #f9a575;
+          top: 350px;
+        }
+
+        p:nth-of-type(2) {
+          position: absolute;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          height: 15px;
+          font-size: 14px;
+          line-height: 26px;
+          color: #666666;
+          top: 390px;
+        }
+
+        button {
+          position: absolute;
+          padding: 0;
+          margin: 0;
+          width: 72px;
+          height: 19px;
+          background-color: #f9a575;
+          border: 0;
+          color: white;
+          top: 450px;
+        }
+      }
+    }
+  }
+}
